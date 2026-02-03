@@ -18,7 +18,7 @@ We take security seriously. If you discover a security vulnerability in PsychoQu
 
 Instead, please email security concerns to:
 
-**security@sxnnyside.dev** (if available)
+**security.sxnnyside@sxnnysideproject.com**
 
 Or open a private security advisory on GitHub:
 https://github.com/Sxnnyside-Project/psychoquine/security/advisories

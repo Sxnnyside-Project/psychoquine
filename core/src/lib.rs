@@ -9,7 +9,7 @@ mod generator;
 
 pub use escape::EscapeStrategy;
 pub use formatter::{FormatOptions, OutputFormat};
-pub use generator::{QuineGenerator, QuineOutput, QuineError};
+pub use generator::{QuineGenerator, QuineGeneratorBuilder, QuineOutput, QuineError};
 
 /// Re-export of the main generation function for convenience
 pub fn generate<S: AsRef<str>>(input: S) -> Result<QuineOutput, QuineError> {

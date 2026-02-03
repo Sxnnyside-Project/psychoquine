@@ -12,6 +12,7 @@ export default function App({ Component }: PageProps) {
         />
         <title>PsychoQuine</title>
         <link rel="stylesheet" href="/styles.css" />
+        <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
           rel="stylesheet"

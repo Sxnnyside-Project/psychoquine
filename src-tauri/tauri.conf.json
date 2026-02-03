@@ -1,9 +1,9 @@
 {
   "build": {
-    "beforeDevCommand": "cd ../ui && deno task dev",
+    "beforeDevCommand": "",
     "beforeBuildCommand": "cd ../ui && deno task build",
     "devPath": "http://localhost:8000",
-    "distDir": "../ui/_fresh"
+    "distDir": "../ui"
   },
   "package": {
     "productName": "PsychoQuine",

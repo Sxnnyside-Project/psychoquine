@@ -93,13 +93,13 @@ impl Formatter {
     }
 
     /// Format the quine data as a single line
-    pub fn format_one_line(&self, data: &str, escaped: &str) -> String {
+    pub fn format_one_line(&self, _data: &str, escaped: &str) -> String {
         let template = self.generate_quine_template(escaped);
         template.replace('\n', "").replace("  ", " ")
     }
 
     /// Format the quine data with line breaks and indentation
-    pub fn format_multi_line(&self, data: &str, escaped: &str) -> String {
+    pub fn format_multi_line(&self, _data: &str, escaped: &str) -> String {
         let template = self.generate_quine_template(escaped);
         self.apply_formatting(&template)
     }

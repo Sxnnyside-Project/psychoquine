@@ -5,7 +5,7 @@
 use std::io::{self, Read, Write};
 use std::process::ExitCode;
 
-use psychoquine_core::{generate, EscapeStrategy, FormatOptions, QuineGenerator};
+use psychoquine_core::{EscapeStrategy, FormatOptions, QuineGenerator};
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 const BANNER: &str = r#"
@@ -69,7 +69,7 @@ struct Args {
 
 fn parse_args() -> Args {
     let mut args = Args::default();
-    let mut argv: Vec<String> = std::env::args().skip(1).collect();
+    let argv: Vec<String> = std::env::args().skip(1).collect();
 
     let mut i = 0;
     while i < argv.len() {

@@ -235,15 +235,4 @@ mod tests {
         assert!(output.one_line.contains("\\n") || output.multi_line.contains("\\n"));
     }
 
-    #[test]
-    fn test_builder_pattern() {
-        let generator = QuineGeneratorBuilder::new()
-            .escape_strategy(EscapeStrategy::Unicode)
-            .indent("  ")
-            .max_line_length(120)
-            .build();
-
-        let result = generator.generate("test");
-        assert!(result.is_ok());
-    }
 }

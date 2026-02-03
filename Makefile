@@ -68,6 +68,7 @@ build-tauri:
 build-release:
 	@echo "Building release versions..."
 	cargo build --release --workspace
+	@which cargo-tauri > /dev/null 2>&1 || (echo "Installing tauri-cli..." && cargo install tauri-cli)
 	cd src-tauri && cargo tauri build
 
 # ──────────────────────────────────────────────────────────────────────────────
